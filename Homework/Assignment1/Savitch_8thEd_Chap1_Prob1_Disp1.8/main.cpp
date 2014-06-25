@@ -19,12 +19,14 @@ using namespace std;
 int main( ) 
 {
     
-    int numpods=10, peaspod=9, ttalps;
+    int numpods, //Number of pods
+        peaspod, //Peas per pod
+        ttalps; //Total Peas
     cout << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
-    cout << numpods << endl;
+    cin >> numpods;
     cout << "Enter the number of peas in a pod:\n";
-    cout << peaspod << endl;
+    cin >> peaspod;
     ttalps = numpods * peaspod;
     cout << "If you have ";
     cout << numpods;
