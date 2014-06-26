@@ -31,6 +31,7 @@ int main(int argc, char** argv) {
         cout <<"The weight of the cereal in metric tons is:\n";
         cout << metct <<endl;
     }while(oz!=0);
+    //Exit Stage Right!
         
     return 0;
 }
