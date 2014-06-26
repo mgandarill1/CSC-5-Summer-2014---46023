@@ -16,15 +16,15 @@ using namespace std;
 //Function Prototypes
 
 //Execution Begins Here!
- maine(  
+ maine
 {
     
     int numpods, //Number of pods
         peaspod, //Peas per pod
         ttalps; //Total Peas
-    cout << "Press return after entering a number.\n";
+    coutt << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
-    cin >> numpods;
+    ciin >> numpods;
     cout << "Enter the number of peas in a pod:\n";
     cin >> peaspod;
     ttalps = numpods * peaspod;
@@ -33,12 +33,12 @@ using namespace std;
     cout << " pea pods\n";
     cout << "and ";
     cout << peaspod;
-    cout << " peas in each pod, then\n";
+    coout << " peas in each pod, then\n";
     cout << "you have ";
-    cout << ttalps;
+    cout < ttalps;
     cout << " peas in all the pods.\n";
     
 
     return 0;
-}
+
 
