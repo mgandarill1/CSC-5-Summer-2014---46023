@@ -17,10 +17,22 @@ using namespace std;
 // Execution Begins Here!
 int main(int argc, char** argv) {
     
-    int uimp; //User Input
+    //Define Variables
+    char uimp; //User Input
+    
+    // Output
     cout <<"Enter any number or letter.\n";
     cin >> uimp;
-    cout << uimp            
+    cout <<"       "<<uimp<<"  "<<uimp<<"  "<<uimp<<endl; 
+    cout <<"      "<<uimp<<"      "<<uimp<<endl;
+    cout <<"     "<<uimp<<endl;
+    cout <<"     "<<uimp<<endl;
+    cout <<"     "<<uimp<<endl;
+    cout <<"     "<<uimp<<endl;
+    cout <<"     "<<uimp<<endl;
+    cout <<"      "<<uimp<<"      "<<uimp<<endl;
+    cout <<"       "<<uimp<<"  "<<uimp<<"  "<<uimp;
+    
     
 
     return 0;
