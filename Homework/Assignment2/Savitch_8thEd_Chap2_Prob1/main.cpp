@@ -11,6 +11,7 @@ using namespace std;
 // User Defined Libraries
 
 // Global Conversions
+const float OZ2TONS = 1/35273.92f;
 
 // Function Prototypes
 
@@ -19,15 +20,18 @@ int main(int argc, char** argv) {
     
     //Define the Variables
     float oz,    // Ounces
-          mett;  // Metric Tons
+          metct;  // Metric Tons
 
     //Ouput
-    cout <<"Enter the weight of the breakfast cereal in ounces.\n";
-    cin >> oz;
-    mett = oz / 35273.92f;
-    cout <<"The weight of the cereal in metric tons is:\n";
-    cout << mett;
-            
-            return 0;
+    
+    do{
+        cout <<"Enter the weight of the breakfast cereal in ounces.\n";
+        cin >> oz;
+        metct = oz * OZ2TONS;
+        cout <<"The weight of the cereal in metric tons is:\n";
+        cout << metct <<endl;
+    }while(oz!=0);
+        
+    return 0;
 }
 
