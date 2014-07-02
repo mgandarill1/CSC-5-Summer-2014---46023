@@ -2,12 +2,13 @@
  * File:   main.cpp
  * Author: Mayra Gandarilla
  * Purpose: Assignment 2
- * Created on July 1, 2014, 1:40 PM
+ * Created on July 2, 2014, 10:10 AM
  */
 
 // System Level Libraries
 #include <iostream>
 using namespace std;
+
 
 // User Defined Libraries
 
@@ -15,12 +16,10 @@ using namespace std;
 
 // Function Prototypes
 
-// Execution Begins Here
+// Execution Begins Here!
 int main(int argc, char** argv) {
     
-    // Define Variables
-
-        
+   //Define Variables
     
     
 
