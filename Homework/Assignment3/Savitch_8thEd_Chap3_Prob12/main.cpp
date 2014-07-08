@@ -54,7 +54,7 @@ int main(int argc, char** argv) {
             <<aprxPi2<<" with "<<nTerms<<endl;
     
     
-    
+    // Exit Stage Right!
     
     
     
