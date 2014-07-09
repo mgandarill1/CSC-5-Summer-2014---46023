@@ -25,6 +25,8 @@ int main(int argc, char** argv) {
     char replay;
     
     // Prompt for choices
+    // Allow for looping by user's wish
+    do {
     cout<<"Enter R for Rock, P for Paper, or S for Scissors.\n";
     cout<<"Player 1's turn: "<<endl;
     cin>>input1;
@@ -71,7 +73,11 @@ int main(int argc, char** argv) {
     else 
     {
         cout<<"One or more invalid entry.\n";
-    }
+    }; 
+    
+    cout<<"Would you like to play again? Type Y for yes.\n";
+    cin>>replay;
+    } while ((replay=='Y'||replay=='y'));
         
         
     return 0;
