@@ -90,12 +90,46 @@ int main(int argc, char** argv) {
          {
              cout<<"Please enter a valid date."<<endl;
          };
-           default: 
-            cout<<"default";
+         break;
+     case '5':
+         if ((d>=1)&&(d<=20))
+         {
+             cout<<"Your sign is Taurus."<<endl;
+         }
+         else if ((d>=21)&&(d<=31))
+         {
+             cout<<"Your sign is Gemini."<<endl;
+         }
+         else
+         {
+             cout<<"Please enter a valid date.";
+         };
+         break;
+     case '6':    
+         if ((d>=1)&&(d<=21))
+         {
+             cout<<"Your sign is Gemini."<<endl;
+         }
+         else if ((d>=21)&&(d<=30))
+         {
+             cout<<"Your sign is Cancer."<<endl;
+         }
+         else
+         {
+             cout<<"Please enter a valid date."<<endl;
+         }
+         break;
+         
+         
+       default: 
+            cout<<"default"<<endl;
+       
        };
-       cout<<"Run again?"<<endl;
+       
+       cout<<"Run again? Press Y for yes"<<endl;
        cin>>replay;
-   }while (replay=='Y');
+       
+   }while (replay=='Y'||'y');
 
     return 0;
 }
