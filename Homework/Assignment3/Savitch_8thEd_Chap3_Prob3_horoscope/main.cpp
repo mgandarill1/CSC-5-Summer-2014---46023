@@ -117,9 +117,36 @@ int main(int argc, char** argv) {
          else
          {
              cout<<"Please enter a valid date."<<endl;
-         }
+         };
          break;
-         
+     case '7':
+         if ((d>=1)&&(d<=22))
+         {
+             cout<<"Your sign is Cancer."<<endl;
+         }
+         else if ((d>=23)&&(d<=31))
+         {
+             cout<<"Your sign is Leo."<<endl;
+         }
+         else 
+         {
+             cout<<"Please enter a valid date."<<endl;
+         };
+         break;
+     case '8':
+         if ((d>=1)&&(d<=22))
+         {
+             cout<<"Your sign is Leo."<<endl;
+         }
+         else if ((d>=23)&&(d<=30))
+         {
+             cout<<"Your sign is Virgo."<<endl;
+         }
+         else
+         {
+             cout<<"Please enter a valid date."<<endl;
+         };
+         break;
          
        default: 
             cout<<"default"<<endl;
