@@ -2,7 +2,7 @@
  * File:   main.cpp
  * Author: Mayra Gandarilla
  * Purpose: Assignment 3
- * Created on July 9, 2014, 1:40 PM
+ * Created on July 15, 2014, 12:59 PM
  */
 
 //System Level Libraries
@@ -217,7 +217,7 @@ int main(int argc, char** argv) {
            break;
            
            case 2: m=2;
-           if ((d>=16)&&(d>=18))
+           if ((d>=16)&&(d<=18))
            {
                cout<<"You are on the cusp of Pisces."<<endl;
            }
@@ -338,8 +338,181 @@ int main(int argc, char** argv) {
            break;
            default:
                cout<<"default"<<endl;
-           
+            };
+            
+            //Calculate compatible signs
+            switch (m)
+           {case 1: m=1;
+                if ((d>=1)&&(d<=19))
+                {
+                    cout<<"You are compatible with Taurus and Virgo."<<endl;
+                }
+                else if ((d>=20)&&(d<=31))
+                {
+                    cout<<"You are compatible with Libra and Gemini."<<endl;
+                }
+                else 
+                {
+                    cout<<"Please enter a valid date.";
+                };
+                break;
+            case 2: m=2;
+                if ((d>=1)&&(d<=18))
+                {
+                    cout<<"You are compatible with Libra and Gemini."<<endl;
+                }
+                else if ((d>=19)&&(d<=29))
+                {
+                    cout<<"You are compatible with Scorpio and Cancer."<<endl;
+                }
+                    else 
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+            case 3: m=3;
+                if ((d>=1)&&(d<=20))
+                {
+                    cout<<"You are compatible with Scorpio and Cancer."<<endl;
+                }
+                else if ((d>=21)&(d<=31))
+                {
+                    cout<<"You are compatible with Leo and Sagittarius"<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+            case 4: m=4;
+                if ((d<=1)&&(d<=19))
+                {
+                    cout<<"You are compatible with Leo and Sagittarius."<<endl;
+                }
+                else if ((d>=20)&&(d<30))
+                {
+                    cout<<"You are compatible with Virgo and Capricorn."<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+            case 5: m=5;
+                if ((d>=1)&&(d<=20))
+                {
+                    cout<<"You are compatible with Virgo and Capricorn."<<endl;
+                }
+                else if ((d>=21)&&(d<=31))
+                {
+                    cout<<"You are compatible with Libra and Aquarius."<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date.";
+                };
+                break;
+            case 6: m=6;    
+                if ((d>=1)&&(d<=21))
+                {
+                    cout<<"You are compatible with Libra and Aquarius."<<endl;
+                }
+                else if ((d>=21)&&(d<=30))
+                {
+                    cout<<"You are compatible with Scorpio and Pisces."<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+            case 7: m=7;
+                if ((d>=1)&&(d<=22))
+                {
+                    cout<<"You are compatible with Scorpio and Pisces."<<endl;
+                }
+                else if ((d>=23)&&(d<=31))
+                {
+                    cout<<"You are compatible with Aries and Sagittarius."<<endl;
+                }
+                else 
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+            case 8: m=8;
+                if ((d>=1)&&(d<=22))
+                {
+                    cout<<"You are compatible with Aries and Sagittarius."<<endl;
+                }
+                else if ((d>=23)&&(d<=30))
+                {
+                    cout<<"You are compatible with Taurus and Capricorn."<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+           case 9: m=9;
+                if ((d>=1)&&(d<=22))
+                {
+                    cout<<"You are compatible with Taurus and Capricorn."<<endl;
+                }
+                else if ((d>=23)&&(d<=30))
+                {
+                    cout<<"You are compatible with Gemini and Aquarius."<<endl;
+                }
+                else
+                {
+                    cout<<"Please enter a valid date."<<endl;
+                };
+                break;
+           case 10: m=10;
+                if ((d>=1)&&(d<=22))
+                {
+                    cout<<"You are compatible with Gemini and Aquarius."<<endl;
+                }
+                else if ((d>=23)&&(d<=31))
+                {
+                    cout<<"You are compatible with Cancer and Pisces."<<endl;
+                };
+                break;
+            case 11: m=11;
+               if ((d>=1)&&(d<=21))
+               {
+                   cout<<"You are compatible with Cancer and Pisces."<<endl;
+               }
+               else if ((d>=22)&&(d<=30))
+               {
+                   cout<<"You are compatible with Aries and Leo."<<endl;
+               }
+               else
+               {
+                   cout<<"Please enter a valid date."<<endl;
+               };
+               break;
+            case 12: m=12;
+               if ((d>=1)&&(d<=21))
+               {
+                   cout<<"You are compatible with Aries and Leo."<<endl;
+               }
+               else if ((d>=22)&&(d<=31))
+               {
+                   cout<<"You are compatible with Virgo and Taurus."<<endl;
+               }
+               else
+               {
+                   cout<<"Please enter a valid date."<<endl;
+               };
+               break;
+            default: 
+               cout<<"default"<<endl;
        };
+            
+            
+            
+            
        cout<<"Run again? Press Y for yes"<<endl;
        cin>>replay; }while (replay=='Y'||'y');
 
